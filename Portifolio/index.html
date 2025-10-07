@@ -1,60 +1,75 @@
 <!DOCTYPE html>
-<html lang="pt-BR">  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="colors.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
-    <title>Portfólio | Wesley Silva</title>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="colors.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&display=swap" rel="stylesheet">
+  <title>Portfólio | Wesley Silva</title>
 </head>
 <body>
 
-    <nav>
-        <ul>
-            <a href="#home">Wesley Silva</a>
-            <a href="#home">Home</a>
-            <a href="#curriculo">Currículo</a>
-            <a href="#projetos">Projetos</a>
-            <a href="#certificados">Certificados</a>
-        </ul>
-    </nav>
+  <!-- ===== NAVBAR FIXA ===== -->
+  <nav class="navbar">
+    <div class="logo">
+      <span class="nome">Wesley</span>
+      <span class="sobrenome">Silva</span>
+    </div>
+    <ul class="menu">
+      <li><a href="index.html" class="ativo">Home</a></li>
+      <li><a href="curriculo.html">Currículo</a></li>
+      <li><a href="projetos.html">Projetos</a></li>
+      <li><a href="certificados.html">Certificados</a></li>
+    </ul>
+  </nav>
 
-    <header id="home"> <h1>Wesley Silva de Rezende</h1>
-        <h2>Desenvolvedor em Formação | Estudante de ADS</h2>
-    </header>
+  <!-- ===== CONTEÚDO PRINCIPAL ===== -->
+  <main class="hero-content" id="home">
+    <h1>Wesley Silva de Rezende</h1>
+    <h2>Desenvolvedor em Formação | Estudante de ADS</h2>
 
+    <div class="contato-container">
+      <a href="mailto:wsilva667788@gmail.com" class="info-box">
+        <i class="fa-solid fa-envelope"></i>
+        <span>wsilva667788@gmail.com</span>
+      </a>
 
-    
-    <section id="contato">
-        <div class="contato-container">
-            <a href="mailto:wsilva667788@gmail.com" class="info-box">
-                <i class="fa-solid fa-envelope"></i>
-                <span>wsilva667788@gmail.com</span>
-            </a>
-    
-            <a href="tel:+5511987993250" class="info-box">
-                <i class="fa-solid fa-phone"></i>
-                <span>+55 11 98799-3250</span>
-            </a>
-    
-            <div class="info-box">
-                <i class="fa-solid fa-location-dot"></i>
-                <span>Mogi das Cruzes, SP</span>
-            </div>
-        </div>
-    </section>
-    <div class="social-links">
-        <a href="https://github.com/SlvWes" target="_blank">
-            <img src="img/github.png" alt="GitHub"></a>
+      <a href="tel:+5511987993250" class="info-box">
+        <i class="fa-solid fa-phone"></i>
+        <span>+55 11 98799-3250</span>
+      </a>
 
-        <a href="https://www.linkedin.com/in/wesley-s-rezende" target="_blank">
-            <img src="img/linkedin.png" alt="LinkedIn"></a>
+      <div class="info-box">
+        <i class="fa-solid fa-location-dot"></i>
+        <span>Mogi das Cruzes, SP</span>
+      </div>
     </div>
 
-    <section id="sobre">
-        <p>Estudante apaixonado por tecnologia e programação, buscando oportunidade de estágio em Desenvolvimento de Software para aplicar conhecimentos e crescer profissionalmente.</p>
-    </section>
+    <div class="social-links">
+      <a href="https://github.com/SlvWes" target="_blank">
+        <img src="img/github.png" alt="GitHub">
+      </a>
+      <a href="https://www.linkedin.com/in/wesley-s-rezende" target="_blank">
+        <img src="img/linkedin.png" alt="LinkedIn">
+      </a>
+    </div>
+
+    <div class="descricao">
+      <p>
+        Estudante apaixonado por tecnologia e programação, buscando oportunidade de estágio
+        em Desenvolvimento de Software para aplicar conhecimentos e crescer profissionalmente.
+      </p>
+    </div>
+
+    <div class="botoes-acao">
+      <a href="curriculo.pdf" class="botao botao-primario" target="_blank">
+        Ver Currículo <i class="fa-solid fa-arrow-right"></i>
+      </a>
+      <a href="#projetos" class="botao botao-secundario">Meus Projetos</a>
+    </div>
+  </main>
 
 </body>
 </html>
