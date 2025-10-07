@@ -1,0 +1,15 @@
+:root {
+
+    /* cor de fundo*/
+    --cor-fundo-principal: #060613;
+
+    /* cores dos botoes */
+    --cor-botao-contatos: rgba(26, 26, 61, 0.9);
+    --cor-botao-contatos-mouse: #171736;
+
+    /* cores do gradiente do titulo */
+    --cor-destaque-ciano: #18FFFF;
+    --cor-destaque-magenta: #F900F9;
+    --gradiente-texto-titulo: linear-gradient(90deg, var(--cor-destaque-ciano) 0%, var(--cor-destaque-magenta) 100%);
+
+}
