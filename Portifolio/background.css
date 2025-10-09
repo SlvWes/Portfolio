@@ -1,9 +1,8 @@
 body {
     margin: 0;
-    height: 100vh;
     background: radial-gradient(ellipse at bottom, #060613 0%, #090A0F 100%);
-    overflow: hidden;
 }
+
 
 .star {
     position: absolute;
