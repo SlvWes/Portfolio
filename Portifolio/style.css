@@ -1,4 +1,6 @@
-/* RESET */
+/* ============================= */
+/* RESET E FONTE PADRÃO */
+/* ============================= */
 * {
   font-family: "Montserrat", sans-serif;
   margin: 0;
@@ -6,7 +8,9 @@
   box-sizing: border-box;
 }
 
-/* NAVBAR */
+/* ============================= */
+/* NAVBAR FIXA E ESTILIZADA */
+/* ============================= */
 .navbar {
     position: fixed;
     top: 0;
@@ -23,11 +27,12 @@
     z-index: 1000;
 }
 
+/* Nome "Wesley Silva" com efeito de brilho */
 .logo {
     font-size: 1.4rem;
     font-weight: 700;
     user-select: none;
-    text-decoration: none;
+    text-decoration: none; /* LINHA ADICIONADA PARA REMOVER O SUBLINHADO */
 }
 
 .logo .nome {
@@ -39,6 +44,7 @@
     color: #fff;
 }
 
+/* Contêiner do menu com borda arredondada */
 .menu {
     list-style: none;
     display: flex;
@@ -49,25 +55,21 @@
     box-shadow: 0 0 15px rgba(0, 240, 255, 0.1);
 }
 
-/* FOTO DE PERFIL */
+
+/* Estilo para a Foto de Perfil na Página Inicial */
 .foto-perfil {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 4px solid var(--cor-destaque-ciano);
-    box-shadow: 0 0 15px rgba(24, 255, 255, 0.3);
-    object-fit: cover;
-    margin-bottom: 25px;
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    width: 150px; /* Largura da imagem, ajuste se necessário */
+    height: 150px; /* Altura da imagem, deve ser igual à largura */
+    border-radius: 50%; /* Deixa a imagem perfeitamente redonda */
+    border: 4px solid var(--cor-destaque-ciano); /* Borda usando a cor do seu tema */
+    box-shadow: 0 0 15px rgba(24, 255, 255, 0.3); /* Sombra para dar um brilho */
+    object-fit: cover; /* Garante que a imagem preencha o círculo sem distorcer */
+    margin-bottom: 25px; /* Espaço entre a foto e o título */
 }
 
-.foto-perfil:hover {
-    transform: scale(1.07);
-    box-shadow: 0 0 25px rgba(24, 255, 255, 0.6);
-}
 
-/* TÍTULO */
 h1 {
+  /* Supondo que --gradiente-texto-titulo esteja em colors.css */
   background-image: var(--gradiente-texto-titulo); 
   background-clip: text;
   -webkit-background-clip: text;
@@ -80,7 +82,9 @@ h1 {
   font-size: clamp(2rem, 5vw, 4rem);
 }
 
+/* ============================= */
 /* SUBTÍTULO */
+/* ============================= */
 h2 {
   color: #a7afbe;
   font-size: clamp(1rem, 2vw, 1.3rem);
@@ -91,6 +95,7 @@ h2 {
     display: inline-block;
 }
 
+/* Estilo geral dos links do menu */
 .menu a {
     text-decoration: none;
     color: #A7AFBE;
@@ -103,6 +108,7 @@ h2 {
     gap: 8px;
 }
 
+/* Efeito hover para os links NÃO ativos */
 .menu a:not(.ativo):hover {
   background-color: transparent;
   border: 2px solid #00f0ff;
@@ -112,31 +118,14 @@ h2 {
   transform: translateY(-3px);
 }
 
+/* Estilo do item ATIVO (com fundo) */
 .menu a.ativo {
     background-color: #00f0ff;
     color: #0d0d18;
     box-shadow: 0 0 12px rgba(0, 240, 255, 0.5);
 }
 
-/* BODY */
+/* Espaço para o conteúdo não ficar escondido atrás da navbar */
 body {
   padding-top: 90px;
-}
-
-body {
-  background-color: var(--cor-fundo-principal); 
-  color: #a7afbe;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  text-align: center;
-  overflow-x: hidden;
-  background-image: url(img/image.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 100vh;
-  margin: 0;
 }
