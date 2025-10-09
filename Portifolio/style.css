@@ -55,6 +55,29 @@
     box-shadow: 0 0 15px rgba(0, 240, 255, 0.1);
 }
 
+h1 {
+  /* Supondo que --gradiente-texto-titulo esteja em colors.css */
+  background-image: var(--gradiente-texto-titulo); 
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 5px;
+  overflow: visible;
+  white-space: nowrap;
+  font-size: clamp(2rem, 5vw, 4rem);
+}
+
+/* ============================= */
+/* SUBTÍTULO */
+/* ============================= */
+h2 {
+  color: #a7afbe;
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  margin-top: 0;
+  margin-bottom: 25px;
+}
 .menu li {
     display: inline-block;
 }
@@ -111,168 +134,4 @@ body {
   background-position: center center;
   height: 100vh;
   margin: 0;
-}
-
-/* ============================= */
-/* CONTEÚDO PRINCIPAL */
-/* ============================= */
-.hero-content {
-  text-align: center;
-  max-width: 900px;
-  padding: 0 20px;
-  margin: 60px auto 40px auto;
-}
-
-/* ============================= */
-/* TÍTULO PRINCIPAL */
-/* ============================= */
-h1 {
-  /* Supondo que --gradiente-texto-titulo esteja em colors.css */
-  background-image: var(--gradiente-texto-titulo); 
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  font-weight: 700;
-  line-height: 1.1;
-  margin-bottom: 5px;
-  overflow: visible;
-  white-space: nowrap;
-  font-size: clamp(2rem, 5vw, 4rem);
-}
-
-/* ============================= */
-/* SUBTÍTULO */
-/* ============================= */
-h2 {
-  color: #a7afbe;
-  font-size: clamp(1rem, 2vw, 1.3rem);
-  margin-top: 0;
-  margin-bottom: 25px;
-}
-
-/* ============================= */
-/* CONTATOS */
-/* ============================= */
-.contato-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 20px;
-  margin-bottom: 25px;
-}
-
-.info-box {
-  display: flex;
-  align-items: center;
-  /* Supondo que --cor-botao-contatos esteja em colors.css */
-  background-color: var(--cor-botao-contatos); 
-  color: #e6edf3;
-  padding: 12px 24px;
-  border-radius: 50px;
-  gap: 10px;
-  font-size: 0.95rem;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.info-box:hover {
-  transform: translateY(-2px);
-  /* Supondo que --cor-botao-contatos-mouse esteja em colors.css */
-  background-color: var(--cor-botao-contatos-mouse);
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-}
-
-/* ============================= */
-/* ÍCONES SOCIAIS */
-/* ============================= */
-.social-links {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin: 10px 0 30px 0;
-}
-
-.social-links a img {
-  width: 42px;
-  height: 42px;
-  transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-.social-links a img:hover {
-  transform: scale(1.1);
-  filter: brightness(1.2);
-}
-
-/* ============================= */
-/* DESCRIÇÃO */
-/* ============================= */
-.hero-content p {
-  color: #d6d6d6;
-  font-size: clamp(1rem, 1.5vw, 1.15rem);
-  line-height: 1.7;
-  max-width: 700px;
-  margin: 0 auto 40px auto;
-}
-
-/* ============================= */
-/* BOTÕES DE AÇÃO */
-/* ============================= */
-.botoes-acao {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 20px;
-  margin-top: 10px;
-}
-
-.botao {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  font-weight: 600;
-  text-decoration: none;
-  padding: 12px 30px;
-  border-radius: 50px;
-  font-size: 0.95rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-/* BOTÃO PRINCIPAL — Ver Currículo */
-.botao-primario {
-  background-color: #00f0ff;
-  color: #0d0d18;
-  border: 2px solid #00f0ff;
-  box-shadow: 0 0 6px rgba(0, 240, 255, 0.3);
-}
-
-.botao-primario:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 0 10px rgba(0, 240, 255, 0.6);
-}
-
-/* BOTÃO SECUNDÁRIO — Meus Projetos */
-.botao-secundario {
-  background-color: transparent;
-  border: 2px solid #00f0ff;
-  color: #00f0ff;
-}
-
-.botao-secundario:hover {
-  background-color: rgba(0, 240, 255, 0.15);
-  box-shadow: 0 0 12px rgba(0, 240, 255, 0.3);
-  transform: translateY(-3px);
-}
-
-/* Ícone da seta */
-.botao i {
-  font-size: 0.9rem;
-  transition: transform 0.3s ease;
-}
-
-.botao-primario:hover i {
-  transform: translateX(5px);
 }

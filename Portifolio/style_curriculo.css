@@ -1,0 +1,75 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0c0a1a; /* Cor de fundo principal, um azul bem escuro */
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden; /* Esconde estrelas que saem da tela */
+    position: relative; /* Necessário para o posicionamento das estrelas */
+}
+
+.objective-card {
+    background-color: rgba(13, 17, 39, 0.85); /* Fundo do card, levemente transparente */
+    backdrop-filter: blur(5px); /* Efeito de vidro fosco no fundo */
+    border: 1px solid #3a3f5e;
+    border-radius: 16px;
+    padding: 24px 32px;
+    max-width: 600px;
+    width: 90%;
+    box-shadow: 0 0 25px rgba(0, 191, 255, 0.15); /* Sombra para dar o efeito de brilho */
+    z-index: 1; /* Garante que o card fique na frente das estrelas */
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* Espaço entre o ícone e o texto */
+    margin-bottom: 16px;
+}
+
+.card-header i {
+    font-size: 24px;
+    color: #00ffff; /* Cor ciano, igual à da imagem */
+}
+
+.card-header h2 {
+    font-size: 22px;
+    font-weight: 500;
+    color: #00ffff; /* Cor ciano, igual à da imagem */
+}
+
+.objective-card p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #cdd5f3; /* Cor do texto do parágrafo, um branco azulado */
+}
+
+/* Estilos para as estrelas (criadas com JavaScript) */
+.star {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    animation: twinkle 5s infinite ease-in-out;
+    z-index: 0; /* Garante que as estrelas fiquem atrás do card */
+}
+
+/* Animação de piscar para as estrelas */
+@keyframes twinkle {
+    0%, 100% {
+        opacity: 0.2;
+        transform: scale(0.8);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
