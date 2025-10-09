@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -6,70 +5,207 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #0c0a1a; /* Cor de fundo principal, um azul bem escuro */
+    /* ----- CORREÇÃO ADICIONADA AQUI ----- */
+    display: block; /* Garante que o corpo se comporte como um bloco normal */
+    height: auto;   /* Permite que a altura se ajuste ao conteúdo */
+    /* ----- FIM DA CORREÇÃO ----- */
+
+    font-family: 'Montserrat', sans-serif;
+    background-color: #0c0a1a;
+    background-image: url(img/image.png); 
+    background-size: cover;
+    background-attachment: fixed; 
+    background-position: center;
     color: #e0e0e0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    overflow: hidden; /* Esconde estrelas que saem da tela */
-    position: relative; /* Necessário para o posicionamento das estrelas */
+    padding-top: 120px; /* Aumentei um pouco o espaço para o cabeçalho */
+    padding-bottom: 50px; 
 }
 
-.objective-card {
-    background-color: rgba(13, 17, 39, 0.85); /* Fundo do card, levemente transparente */
-    backdrop-filter: blur(5px); /* Efeito de vidro fosco no fundo */
+/* Container principal que alinha os cards */
+.curriculo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px; /* Espaçamento entre os cards */
+    width: 100%;
+    padding: 0 20px;
+}
+
+/* Cabeçalho "Currículo Profissional" */
+.header-curriculo {
+    text-align: center;
+    margin-bottom: 20px;
+    max-width: 800px;
+}
+
+.header-curriculo h1 {
+    background-image: var(--gradiente-texto-titulo); 
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: clamp(2rem, 5vw, 2.8rem);
+    font-weight: 700;
+}
+
+.header-curriculo p {
+    font-size: clamp(1rem, 2.5vw, 1.1rem);
+    color: #a7afbe;
+    margin-top: 10px;
+}
+
+/* Estilo unificado para todos os cards da página */
+.curriculo-card {
+    background-color: rgba(13, 17, 39, 0.85);
+    backdrop-filter: blur(5px);
     border: 1px solid #3a3f5e;
     border-radius: 16px;
     padding: 24px 32px;
-    max-width: 600px;
-    width: 90%;
-    box-shadow: 0 0 25px rgba(0, 191, 255, 0.15); /* Sombra para dar o efeito de brilho */
-    z-index: 1; /* Garante que o card fique na frente das estrelas */
+    max-width: 800px;
+    width: 100%;
+    box-shadow: 0 0 25px rgba(0, 191, 255, 0.1);
+    text-align: left;
 }
 
 .card-header {
     display: flex;
-    align-items: center;
-    gap: 12px; /* Espaço entre o ícone e o texto */
+    align-items: center; /* Esta é a propriedade chave para o alinhamento vertical */
+    gap: 12px;
     margin-bottom: 16px;
 }
 
 .card-header i {
-    font-size: 24px;
-    color: #00ffff; /* Cor ciano, igual à da imagem */
+    font-size: 22px;
+    color: #00ffff;
+    /* Removido o 'width' e 'text-align' para um alinhamento mais natural */
 }
 
 .card-header h2 {
-    font-size: 22px;
-    font-weight: 500;
-    color: #00ffff; /* Cor ciano, igual à da imagem */
+    font-size: 20px;
+    font-weight: 600;
+    color: #00ffff;
+    /* Adicionado para garantir que não haja margens interferindo */
+    margin: 0; 
 }
 
-.objective-card p {
-    font-size: 16px;
+.curriculo-card p {
+    font-size: 15px;
     line-height: 1.6;
-    color: #cdd5f3; /* Cor do texto do parágrafo, um branco azulado */
+    color: #cdd5f3;
 }
 
-/* Estilos para as estrelas (criadas com JavaScript) */
-.star {
-    position: absolute;
-    background-color: white;
-    border-radius: 50%;
-    animation: twinkle 5s infinite ease-in-out;
-    z-index: 0; /* Garante que as estrelas fiquem atrás do card */
+/* Estilos para a lista de Conhecimentos */
+.conhecimentos-lista {
+    list-style: none;
+    padding-left: 5px;
 }
 
-/* Animação de piscar para as estrelas */
-@keyframes twinkle {
-    0%, 100% {
-        opacity: 0.2;
-        transform: scale(0.8);
-    }
-    50% {
-        opacity: 1;
-        transform: scale(1);
-    }
+.conhecimentos-lista li {
+    margin-bottom: 15px;
+}
+
+.conhecimentos-lista li strong {
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.conhecimentos-lista li p {
+    font-size: 14px;
+    padding-left: 2px;
+}
+
+/* Estilos para as tags de Interesse */
+.tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tag {
+    background-color: #F900F9; 
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Estilos para a seção de Educação */
+.educacao-info h3 {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.educacao-info p {
+    font-size: 15px;
+    margin-top: 2px;
+}
+
+.educacao-periodo {
+    font-size: 13px !important; 
+    color: #a7afbe !important;
+    margin-top: 8px;
+}
+
+
+
+/* Estilos para as tags de Interesse */
+.tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tag {
+    background-color: #F900F9; 
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    /* Adicionado para um efeito suave */
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+/* Adicionado para o efeito ao passar o mouse */
+.tag:hover {
+    background-color: #c200c2; /* Um tom de magenta mais escuro */
+    transform: translateY(-2px); /* Efeito sutil de levantar a tag */
+}
+
+/* =================================== */
+/* BOTÃO DE DOWNLOAD DE CURRÍCULO      */
+/* =================================== */
+.download-cv-section {
+    text-align: center; /* Centraliza o botão */
+    margin-top: 30px; /* Espaço entre o último card e o botão */
+    margin-bottom: 20px; /* Espaço entre o botão e o final da página */
+    max-width: 800px; /* Limita a largura para seguir o padrão dos cards */
+    width: 100%;
+}
+/* O restante do CSS para .btn-download-cv permanece o mesmo */
+.btn-download-cv {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #F900F9;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    box-shadow: 0 0 15px rgba(249, 0, 249, 0.3);
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-download-cv:hover {
+    background-color: #c200c2;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 20px rgba(249, 0, 249, 0.5);
+}
+
+.btn-download-cv i {
+    font-size: 1.1rem;
 }

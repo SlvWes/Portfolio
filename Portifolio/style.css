@@ -55,6 +55,27 @@
     box-shadow: 0 0 15px rgba(0, 240, 255, 0.1);
 }
 
+
+/* Estilo para a Foto de Perfil na Página Inicial */
+/* Estilo para a Foto de Perfil na Página Inicial */
+.foto-perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid var(--cor-destaque-ciano);
+    box-shadow: 0 0 15px rgba(24, 255, 255, 0.3);
+    object-fit: cover;
+    margin-bottom: 25px;
+    /* ADICIONADO: Prepara a imagem para a animação */
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* ADICIONADO: Efeito ao passar o mouse */
+.foto-perfil:hover {
+    transform: scale(1.07); /* Aumenta o tamanho da foto em 7% */
+    box-shadow: 0 0 25px rgba(24, 255, 255, 0.6); /* Intensifica o brilho */
+}
+
 h1 {
   /* Supondo que --gradiente-texto-titulo esteja em colors.css */
   background-image: var(--gradiente-texto-titulo); 

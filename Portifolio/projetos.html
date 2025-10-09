@@ -3,26 +3,96 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="colors.css"> <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
-  <title>Portfólio | Wesley Silva</title>
+  <link rel="icon" type="image/png" href="img/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="imagem/svg+xml" href="img/favicon.svg" />
+  <link rel="ícone do atalho" href="img/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png" />
+  <link rel="manifest" href="img/site.webmanifest" />
+  
+  <title>Projetos</title>
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  
+  <link rel="stylesheet" href="colors.css">
+  <link rel="stylesheet" href="style.css"> <link rel="stylesheet" href="style_projetos.css"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <nav class="navbar">
     <div class="logo">
-    <a href="index.html" class="logo">
-        <span class="nome">Wesley</span>
-        <span class="sobrenome">Silva</span>
-  </a>
+      <a href="index.html" class="logo">
+          <span class="nome">Wesley</span>
+          <span class="sobrenome">Silva</span>
+      </a>
     </div>
 
     <ul class="menu">
-      <li><a href="index.html" ><i class="fa-solid fa-house"></i> Home</a></li>
+      <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
       <li><a href="curriculo.html"><i class="fa-solid fa-file-lines"></i> Currículo</a></li>
       <li><a href="projetos.html" class="ativo"><i class="fa-solid fa-briefcase"></i> Projetos</a></li>
+      <li><a href="#"><i class="fa-solid fa-certificate"></i> Certificados</a></li>
     </ul>
   </nav>
+
+  <main class="projects-container">
+    <header class="projects-header">
+      <h1>Projetos Pessoais</h1>
+      <p>Projetos desenvolvidos para prática e aprendizado</p>
+    </header>
+
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Sistema de Gerenciamento</h3>
+        <p>Projeto acadêmico desenvolvido em Python para gerenciamento de dados com manipulação de arquivos.</p>
+        <div class="project-tags">
+          <span class="tag tag-pink">Python</span>
+          <span class="tag tag-grey">File I/O</span>
+          <span class="tag tag-grey">Data Structures</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="btn btn-code"><i class="fa-brands fa-github"></i> Código</a>
+          <a href="#" class="btn btn-demo"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>Portfólio Web</h3>
+        <p>Site pessoal desenvolvido com HTML e CSS, apresentando projetos e habilidades.</p>
+        <div class="project-tags">
+          <span class="tag tag-orange">HTML</span>
+          <span class="tag tag-blue">CSS</span>
+          <span class="tag tag-green">Responsive Design</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="btn btn-code"><i class="fa-brands fa-github"></i> Código</a>
+          <a href="#" class="btn btn-demo"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>Calculadora Científica</h3>
+        <p>Aplicação Python com interface para realizar operações matemáticas complexas.</p>
+        <div class="project-tags">
+          <span class="tag tag-pink">Python</span>
+          <span class="tag tag-grey">Math Library</span>
+          <span class="tag tag-red">UI Design</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="btn btn-code"><i class="fa-brands fa-github"></i> Código</a>
+          <a href="#" class="btn btn-demo"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="coming-soon-card">
+        <h3>Mais projetos em breve...</h3>
+        <p>Estou constantemente trabalhando em novos projetos para expandir meu portfólio</p>
+    </div>
+  </main>
+
 </body>
 </html>
