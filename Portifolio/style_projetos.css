@@ -107,12 +107,13 @@ body {
 /* =================================== */
 .project-links {
     display: flex;
-    gap: 15px;
-    margin-top: auto; /* Empurra os botões para o final do card */
+    justify-content: center; /* Centraliza o botão quando há apenas um */
+    gap: 15px; /* Mantido caso você queira adicionar mais de um botão no futuro */
+    margin-top: auto; 
 }
 
 .btn {
-    flex: 1; /* Faz os botões ocuparem o mesmo espaço */
+    /* Removido 'flex: 1;' daqui */
     text-decoration: none;
     padding: 10px 15px;
     border-radius: 8px;
@@ -123,6 +124,7 @@ body {
     justify-content: center;
     gap: 8px;
     transition: all 0.3s ease;
+    width: 150px; /* Largura fixa para o botão, ajuste se quiser */
 }
 
 .btn-code {
@@ -133,17 +135,6 @@ body {
 .btn-code:hover {
     background-color: rgba(0, 240, 255, 0.15);
     box-shadow: 0 0 12px rgba(0, 240, 255, 0.3);
-}
-
-.btn-demo {
-    background-color: #00ffff;
-    border: 2px solid #00ffff;
-    color: #0d0d18;
-}
-.btn-demo:hover {
-    background-color: #5affff;
-    border-color: #5affff;
-    box-shadow: 0 0 12px rgba(0, 240, 255, 0.5);
 }
 
 /* =================================== */
@@ -163,4 +154,61 @@ body {
 }
 .coming-soon-card p {
     color: #7b849c;
+}
+
+/* =================================== */
+/* BOTÕES DE CÓDIGO E DEMO            */
+/* =================================== */
+.project-links {
+    display: flex;
+    justify-content: center; /* Centraliza botões se houver espaço */
+    gap: 15px;
+    margin-top: auto;
+    /* Adicionado para garantir que o flexbox se comporte bem com um ou dois itens */
+    flex-wrap: wrap; 
+}
+
+.btn {
+    flex: 1; /* Faz os botões ocuparem o mesmo espaço */
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    min-width: 120px; /* Garante que o botão não fique muito pequeno */
+    max-width: 180px; /* Limita o tamanho máximo */
+}
+
+/* Garante que o botão único ocupe a largura total de .project-links */
+.project-links a:only-child {
+    flex: none; /* Desativa o flex: 1; para um único item */
+    width: 100%; /* Ocupa 100% da largura do pai */
+    max-width: 300px; /* Limita a largura do botão único para não ficar gigante */
+}
+
+
+.btn-code {
+    background-color: transparent;
+    border: 2px solid #00ffff;
+    color: #00ffff;
+}
+.btn-code:hover {
+    background-color: rgba(0, 240, 255, 0.15);
+    box-shadow: 0 0 12px rgba(0, 240, 255, 0.3);
+}
+
+.btn-demo {
+    background-color: #F900F9; /* Cor magenta, como o botão de CV */
+    border: 2px solid #F900F9;
+    color: #fff; /* Texto branco */
+}
+.btn-demo:hover {
+    background-color: #c200c2; /* Magenta mais escuro */
+    border-color: #c200c2;
+    box-shadow: 0 0 12px rgba(249, 0, 249, 0.5);
 }

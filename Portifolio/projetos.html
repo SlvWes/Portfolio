@@ -3,18 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projetos | Wesley Silva</title>
+
   <link rel="icon" type="image/png" href="img/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="imagem/svg+xml" href="img/favicon.svg" />
   <link rel="ícone do atalho" href="img/favicon.ico" />
   <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png" />
   <link rel="manifest" href="img/site.webmanifest" />
-  
-  <title>Projetos</title>
-  
-  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-  <link rel="manifest" href="favicon/site.webmanifest">
   
   <link rel="stylesheet" href="colors.css">
   <link rel="stylesheet" href="style.css"> <link rel="stylesheet" href="style_projetos.css"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -34,7 +29,6 @@
       <li><a href="index.html"><i class="fa-solid fa-house"></i> Home</a></li>
       <li><a href="curriculo.html"><i class="fa-solid fa-file-lines"></i> Currículo</a></li>
       <li><a href="projetos.html" class="ativo"><i class="fa-solid fa-briefcase"></i> Projetos</a></li>
-      <li><a href="#"><i class="fa-solid fa-certificate"></i> Certificados</a></li>
     </ul>
   </nav>
 
@@ -46,44 +40,68 @@
 
     <div class="projects-grid">
       <div class="project-card">
-        <h3>Sistema de Gerenciamento</h3>
-        <p>Projeto acadêmico desenvolvido em Python para gerenciamento de dados com manipulação de arquivos.</p>
+        <h3>primeiro-jogo-em-python</h3>
+        <p>Desenvolvendo um jogo usando a biblioteca pygame.</p>
         <div class="project-tags">
           <span class="tag tag-pink">Python</span>
-          <span class="tag tag-grey">File I/O</span>
-          <span class="tag tag-grey">Data Structures</span>
+          <span class="tag tag-blue">Pygame</span>
         </div>
         <div class="project-links">
-          <a href="#" class="btn btn-code"><i class="fa-brands fa-github"></i> Código</a>
-          <a href="#" class="btn btn-demo"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+          <a href="https://github.com/SlvWes/primeiro-jogo-em-python" target="_blank" class="btn btn-code"><i class="fa-brands fa-github"></i> Código</a>
         </div>
       </div>
 
       <div class="project-card">
-        <h3>Portfólio Web</h3>
-        <p>Site pessoal desenvolvido com HTML e CSS, apresentando projetos e habilidades.</p>
+        <h3>implementacao-bot-discord</h3>
+        <p>Este projeto é um bot para Discord desenvolvido em Python utilizando a biblioteca discord.py. O objetivo é explorar e aprender sobre a criação de bots, implementação de comandos personalizados e uso de APIs.</p>
+        <div class="project-tags">
+          <span class="tag tag-pink">Python</span>
+          <span class="tag tag-grey">Discord.py</span>
+          <span class="tag tag-green">APIs</span>
+        </div>
+        <div class="project-links">
+          <a href="#" target="_blank" class="btn btn-code"><i class="fa-brands fa-github"></i> Código</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>sistema-bancario-python</h3>
+        <p>Sistema bancário em console Python com operações de depósito (validação de valores positivos), saque (limite diário de R$ 500 e 3 operações) e extrato com histórico de transações e saldo atual.</p>
+        <div class="project-tags">
+          <span class="tag tag-pink">Python</span>
+          <span class="tag tag-grey">Console App</span>
+          <span class="tag tag-blue">Lógica de Programação</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/SlvWes/sistema-bancario-python" target="_blank" class="btn btn-code"><i class="fa-brands fa-github"></i> Código</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h3>SCCP-STORE</h3>
+        <p>Projeto de e-commerce, desenvolvido com HTML, CSS e JavaScript, oferece uma experiência de compra moderna e responsiva para a Fiel Torcida.</p>
         <div class="project-tags">
           <span class="tag tag-orange">HTML</span>
           <span class="tag tag-blue">CSS</span>
+          <span class="tag tag-red">JavaScript</span>
           <span class="tag tag-green">Responsive Design</span>
         </div>
         <div class="project-links">
-          <a href="#" class="btn btn-code"><i class="fa-brands fa-github"></i> Código</a>
-          <a href="#" class="btn btn-demo"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+          <a href="https://github.com/SlvWes/Cadastro-de-Usuarios-em-Python" target="_blank" class="btn btn-code"><i class="fa-brands fa-github"></i> Código</a>
+          <a href="https://slvwes.github.io/SCCP-STORE" target="_blank" class="btn btn-demo"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
         </div>
       </div>
 
       <div class="project-card">
-        <h3>Calculadora Científica</h3>
-        <p>Aplicação Python com interface para realizar operações matemáticas complexas.</p>
+        <h3>Cadastro-de-Usuarios-em-Python</h3>
+        <p>Sistema de cadastro em Python com interface colorida no terminal. Gerencia usuários (nome, email, CPF) e armazena dados em arquivos texto.</p>
         <div class="project-tags">
           <span class="tag tag-pink">Python</span>
-          <span class="tag tag-grey">Math Library</span>
-          <span class="tag tag-red">UI Design</span>
+          <span class="tag tag-grey">Terminal UI</span>
+          <span class="tag tag-orange">File I/O</span>
         </div>
         <div class="project-links">
-          <a href="#" class="btn btn-code"><i class="fa-brands fa-github"></i> Código</a>
-          <a href="#" class="btn btn-demo"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+          <a href="https://github.com/SlvWes/Cadastro-de-Usuarios-em-Python" target="_blank" class="btn btn-code"><i class="fa-brands fa-github"></i> Código</a>
         </div>
       </div>
     </div>
@@ -93,6 +111,7 @@
         <p>Estou constantemente trabalhando em novos projetos para expandir meu portfólio</p>
     </div>
   </main>
+
 
 </body>
 </html>
