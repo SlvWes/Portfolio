@@ -1,6 +1,4 @@
-/* ============================= */
-/* RESET E FONTE PADRÃO */
-/* ============================= */
+/* RESET */
 * {
   font-family: "Montserrat", sans-serif;
   margin: 0;
@@ -8,9 +6,7 @@
   box-sizing: border-box;
 }
 
-/* ============================= */
-/* NAVBAR FIXA E ESTILIZADA */
-/* ============================= */
+/* NAVBAR */
 .navbar {
     position: fixed;
     top: 0;
@@ -27,12 +23,11 @@
     z-index: 1000;
 }
 
-/* Nome "Wesley Silva" com efeito de brilho */
 .logo {
     font-size: 1.4rem;
     font-weight: 700;
     user-select: none;
-    text-decoration: none; /* LINHA ADICIONADA PARA REMOVER O SUBLINHADO */
+    text-decoration: none;
 }
 
 .logo .nome {
@@ -44,7 +39,6 @@
     color: #fff;
 }
 
-/* Contêiner do menu com borda arredondada */
 .menu {
     list-style: none;
     display: flex;
@@ -55,9 +49,7 @@
     box-shadow: 0 0 15px rgba(0, 240, 255, 0.1);
 }
 
-
-/* Estilo para a Foto de Perfil na Página Inicial */
-/* Estilo para a Foto de Perfil na Página Inicial */
+/* FOTO DE PERFIL */
 .foto-perfil {
     width: 150px;
     height: 150px;
@@ -66,18 +58,16 @@
     box-shadow: 0 0 15px rgba(24, 255, 255, 0.3);
     object-fit: cover;
     margin-bottom: 25px;
-    /* ADICIONADO: Prepara a imagem para a animação */
     transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-/* ADICIONADO: Efeito ao passar o mouse */
 .foto-perfil:hover {
-    transform: scale(1.07); /* Aumenta o tamanho da foto em 7% */
-    box-shadow: 0 0 25px rgba(24, 255, 255, 0.6); /* Intensifica o brilho */
+    transform: scale(1.07);
+    box-shadow: 0 0 25px rgba(24, 255, 255, 0.6);
 }
 
+/* TÍTULO */
 h1 {
-  /* Supondo que --gradiente-texto-titulo esteja em colors.css */
   background-image: var(--gradiente-texto-titulo); 
   background-clip: text;
   -webkit-background-clip: text;
@@ -90,9 +80,7 @@ h1 {
   font-size: clamp(2rem, 5vw, 4rem);
 }
 
-/* ============================= */
 /* SUBTÍTULO */
-/* ============================= */
 h2 {
   color: #a7afbe;
   font-size: clamp(1rem, 2vw, 1.3rem);
@@ -103,7 +91,6 @@ h2 {
     display: inline-block;
 }
 
-/* Estilo geral dos links do menu */
 .menu a {
     text-decoration: none;
     color: #A7AFBE;
@@ -116,7 +103,6 @@ h2 {
     gap: 8px;
 }
 
-/* Efeito hover para os links NÃO ativos */
 .menu a:not(.ativo):hover {
   background-color: transparent;
   border: 2px solid #00f0ff;
@@ -126,20 +112,18 @@ h2 {
   transform: translateY(-3px);
 }
 
-/* Estilo do item ATIVO (com fundo) */
 .menu a.ativo {
     background-color: #00f0ff;
     color: #0d0d18;
     box-shadow: 0 0 12px rgba(0, 240, 255, 0.5);
 }
 
-/* Espaço para o conteúdo não ficar escondido atrás da navbar */
+/* BODY */
 body {
   padding-top: 90px;
 }
 
 body {
-  /* Supondo que --cor-fundo-principal esteja em colors.css */
   background-color: var(--cor-fundo-principal); 
   color: #a7afbe;
   display: flex;

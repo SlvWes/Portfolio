@@ -1,15 +1,14 @@
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* BODY */
 body {
-    /* ----- CORREÇÃO ADICIONADA AQUI ----- */
-    display: block; /* Garante que o corpo se comporte como um bloco normal */
-    height: auto;   /* Permite que a altura se ajuste ao conteúdo */
-    /* ----- FIM DA CORREÇÃO ----- */
-
+    display: block;
+    height: auto;
     font-family: 'Montserrat', sans-serif;
     background-color: #0c0a1a;
     background-image: url(img/image.png); 
@@ -17,21 +16,21 @@ body {
     background-attachment: fixed; 
     background-position: center;
     color: #e0e0e0;
-    padding-top: 120px; /* Aumentei um pouco o espaço para o cabeçalho */
+    padding-top: 120px;
     padding-bottom: 50px; 
 }
 
-/* Container principal que alinha os cards */
+/* CONTAINER */
 .curriculo-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 25px; /* Espaçamento entre os cards */
+    gap: 25px;
     width: 100%;
     padding: 0 20px;
 }
 
-/* Cabeçalho "Currículo Profissional" */
+/* HEADER */
 .header-curriculo {
     text-align: center;
     margin-bottom: 20px;
@@ -53,7 +52,7 @@ body {
     margin-top: 10px;
 }
 
-/* Estilo unificado para todos os cards da página */
+/* CARDS */
 .curriculo-card {
     background-color: rgba(13, 17, 39, 0.85);
     backdrop-filter: blur(5px);
@@ -68,7 +67,7 @@ body {
 
 .card-header {
     display: flex;
-    align-items: center; /* Esta é a propriedade chave para o alinhamento vertical */
+    align-items: center;
     gap: 12px;
     margin-bottom: 16px;
 }
@@ -76,14 +75,12 @@ body {
 .card-header i {
     font-size: 22px;
     color: #00ffff;
-    /* Removido o 'width' e 'text-align' para um alinhamento mais natural */
 }
 
 .card-header h2 {
     font-size: 20px;
     font-weight: 600;
     color: #00ffff;
-    /* Adicionado para garantir que não haja margens interferindo */
     margin: 0; 
 }
 
@@ -93,7 +90,7 @@ body {
     color: #cdd5f3;
 }
 
-/* Estilos para a lista de Conhecimentos */
+/* CONHECIMENTOS */
 .conhecimentos-lista {
     list-style: none;
     padding-left: 5px;
@@ -114,7 +111,7 @@ body {
     padding-left: 2px;
 }
 
-/* Estilos para as tags de Interesse */
+/* TAGS */
 .tags-container {
     display: flex;
     flex-wrap: wrap;
@@ -130,7 +127,7 @@ body {
     font-weight: 500;
 }
 
-/* Estilos para a seção de Educação */
+/* EDUCAÇÃO */
 .educacao-info h3 {
     color: #fff;
     font-size: 17px;
@@ -148,9 +145,6 @@ body {
     margin-top: 8px;
 }
 
-
-
-/* Estilos para as tags de Interesse */
 .tags-container {
     display: flex;
     flex-wrap: wrap;
@@ -164,27 +158,23 @@ body {
     border-radius: 20px;
     font-size: 14px;
     font-weight: 500;
-    /* Adicionado para um efeito suave */
     transition: background-color 0.3s ease, transform 0.3s ease; 
 }
 
-/* Adicionado para o efeito ao passar o mouse */
 .tag:hover {
-    background-color: #c200c2; /* Um tom de magenta mais escuro */
-    transform: translateY(-2px); /* Efeito sutil de levantar a tag */
+    background-color: #c200c2;
+    transform: translateY(-2px);
 }
 
-/* =================================== */
-/* BOTÃO DE DOWNLOAD DE CURRÍCULO      */
-/* =================================== */
+/* BOTÃO DOWNLOAD */
 .download-cv-section {
-    text-align: center; /* Centraliza o botão */
-    margin-top: 30px; /* Espaço entre o último card e o botão */
-    margin-bottom: 20px; /* Espaço entre o botão e o final da página */
-    max-width: 800px; /* Limita a largura para seguir o padrão dos cards */
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    max-width: 800px;
     width: 100%;
 }
-/* O restante do CSS para .btn-download-cv permanece o mesmo */
+
 .btn-download-cv {
     display: inline-flex;
     align-items: center;

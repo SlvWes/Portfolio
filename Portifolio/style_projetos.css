@@ -1,6 +1,4 @@
-/* =================================== */
-/* LAYOUT GERAL DA PÁGINA DE PROJETOS */
-/* =================================== */
+/* LAYOUT */
 body {
     display: block;
     height: auto;
@@ -34,19 +32,14 @@ body {
     margin-top: 10px;
 }
 
-/* =================================== */
-/* GRID RESPONSIVO PARA OS PROJETOS   */
-/* =================================== */
+/* GRID */
 .projects-grid {
     display: grid;
-    /* Cria 2 colunas em telas maiores e 1 em telas menores */
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 30px;
 }
 
-/* =================================== */
-/* ESTILO DO CARD DE PROJETO          */
-/* =================================== */
+/* CARD */
 .project-card {
     background-color: rgba(13, 17, 39, 0.85);
     border: 1px solid #3a3f5e;
@@ -54,7 +47,7 @@ body {
     padding: 24px 28px;
     box-shadow: 0 0 25px rgba(0, 191, 255, 0.1);
     display: flex;
-    flex-direction: column; /* Organiza o conteúdo em coluna */
+    flex-direction: column;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -72,13 +65,11 @@ body {
 .project-card p {
     color: #cdd5f3;
     line-height: 1.6;
-    flex-grow: 1; /* Faz a descrição ocupar o espaço disponível */
+    flex-grow: 1;
     margin-bottom: 20px;
 }
 
-/* =================================== */
-/* TAGS DE TECNOLOGIA                 */
-/* =================================== */
+/* TAGS */
 .project-tags {
     display: flex;
     flex-wrap: wrap;
@@ -93,7 +84,7 @@ body {
     font-weight: 600;
     color: #fff;
 }
-/* Cores específicas para as tags */
+
 .tag.tag-pink { background-color: #E63B6D; }
 .tag.tag-grey { background-color: #5A6A8A; }
 .tag.tag-orange { background-color: #E67E22; }
@@ -102,18 +93,15 @@ body {
 .tag.tag-red { background-color: #E74C3C; }
 
 
-/* =================================== */
-/* BOTÕES DE CÓDIGO E DEMO            */
-/* =================================== */
+/* BOTÕES */
 .project-links {
     display: flex;
-    justify-content: center; /* Centraliza o botão quando há apenas um */
-    gap: 15px; /* Mantido caso você queira adicionar mais de um botão no futuro */
+    justify-content: center;
+    gap: 15px;
     margin-top: auto; 
 }
 
 .btn {
-    /* Removido 'flex: 1;' daqui */
     text-decoration: none;
     padding: 10px 15px;
     border-radius: 8px;
@@ -124,7 +112,7 @@ body {
     justify-content: center;
     gap: 8px;
     transition: all 0.3s ease;
-    width: 150px; /* Largura fixa para o botão, ajuste se quiser */
+    width: 150px;
 }
 
 .btn-code {
@@ -137,11 +125,9 @@ body {
     box-shadow: 0 0 12px rgba(0, 240, 255, 0.3);
 }
 
-/* =================================== */
-/* CARD "EM BREVE"                   */
-/* =================================== */
+/* CARD EM BREVE */
 .coming-soon-card {
-    grid-column: 1 / -1; /* Ocupa a largura total da grid */
+    grid-column: 1 / -1;
     text-align: center;
     border: 2px dashed #3a3f5e;
     border-radius: 16px;
@@ -156,20 +142,17 @@ body {
     color: #7b849c;
 }
 
-/* =================================== */
-/* BOTÕES DE CÓDIGO E DEMO            */
-/* =================================== */
+/* BOTÕES */
 .project-links {
     display: flex;
-    justify-content: center; /* Centraliza botões se houver espaço */
+    justify-content: center;
     gap: 15px;
     margin-top: auto;
-    /* Adicionado para garantir que o flexbox se comporte bem com um ou dois itens */
     flex-wrap: wrap; 
 }
 
 .btn {
-    flex: 1; /* Faz os botões ocuparem o mesmo espaço */
+    flex: 1;
     text-decoration: none;
     padding: 10px 15px;
     border-radius: 8px;
@@ -180,17 +163,15 @@ body {
     justify-content: center;
     gap: 8px;
     transition: all 0.3s ease;
-    min-width: 120px; /* Garante que o botão não fique muito pequeno */
-    max-width: 180px; /* Limita o tamanho máximo */
+    min-width: 120px;
+    max-width: 180px;
 }
 
-/* Garante que o botão único ocupe a largura total de .project-links */
 .project-links a:only-child {
-    flex: none; /* Desativa o flex: 1; para um único item */
-    width: 100%; /* Ocupa 100% da largura do pai */
-    max-width: 300px; /* Limita a largura do botão único para não ficar gigante */
+    flex: none;
+    width: 100%;
+    max-width: 300px;
 }
-
 
 .btn-code {
     background-color: transparent;
@@ -203,12 +184,12 @@ body {
 }
 
 .btn-demo {
-    background-color: #F900F9; /* Cor magenta, como o botão de CV */
+    background-color: #F900F9;
     border: 2px solid #F900F9;
-    color: #fff; /* Texto branco */
+    color: #fff;
 }
 .btn-demo:hover {
-    background-color: #c200c2; /* Magenta mais escuro */
+    background-color: #c200c2;
     border-color: #c200c2;
     box-shadow: 0 0 12px rgba(249, 0, 249, 0.5);
 }
